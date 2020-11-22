@@ -79,6 +79,20 @@ const GROUP_NAMES = {
     "Schneewittchen",
     "Tapferes Schneiderlein",
   ],
+  zodiac: [
+    "Widder",
+    "Stier",
+    "Zwillinge",
+    "Krebs",
+    "Löwe",
+    "Jungfrau",
+    "Waage",
+    "Skorpion",
+    "Schütze",
+    "Steinbock",
+    "Wassermann",
+    "Fische",
+  ],
 };
 
 function shuffle(arr) {
