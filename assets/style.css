@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap");
+
+:root {
+  --border-color: #333;
+  --border-radius: 5px;
+  --border-width: 2px;
+  --text-color: #333;
+  --shadow-color: rgba(0, 128, 128, 0.4);
+  --nice-orange: rgba(255, 166, 60, 0.75);
+}
+
+body {
+  background-color: ivory;
+  color: var(--text-color);
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+#overview {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.container {
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 10px 10px 5px var(--shadow-color);
+}
+
+.tool-selection {
+  align-items: center;
+  color: var(--text-color);
+  display: flex;
+  height: 8rem;
+  justify-content: center;
+  margin: 1rem;
+  text-decoration: none;
+  width: 12rem;
+}
+
+.tool-selection:hover span,
+.tool-selection:focus span {
+  box-shadow: inset 0 -.5rem 0 var(--shadow-color);
+}
