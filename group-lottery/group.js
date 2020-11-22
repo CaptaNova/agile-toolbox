@@ -1,6 +1,7 @@
 const SHAKE_DURATION = 700;
 const MIN_GROUP_COUNT = 1;
 const MAX_GROUP_COUNT = 12;
+const XMAS = "xmas";
 const GROUP_NAMES = {
   city: [
     // 3 largest urban areas from each continent
@@ -79,6 +80,19 @@ const GROUP_NAMES = {
     "Schneewittchen",
     "Tapferes Schneiderlein",
   ],
+  xmas: [
+    "Glühwein",
+    "Grinch",
+    "Knecht Ruprecht",
+    "Lebkuchen",
+    "Nikolaus",
+    "Rudolf",
+    "Schneemann",
+    "Spekulatius",
+    "Weihnachtsmann",
+    "Wichtel",
+    "Ho Ho Ho",
+  ],
   zodiac: [
     "Widder",
     "Stier",
@@ -104,8 +118,19 @@ function shuffle(arr) {
   }
 }
 
+function isXmas() {
+  const date = new Date();
+  return date.getMonth() === 11 && date.getDate <= 25;
+}
+
 function getGroupNameCategory() {
-  const categories = Object.keys(GROUP_NAMES);
+  if (isXmas()) {
+    return XMAS;
+  }
+
+  const categories = Object.keys(GROUP_NAMES).filter(
+    (category) => category !== XMAS
+  );
   const index = Math.floor(Math.random() * categories.length);
   return categories[index];
 }
