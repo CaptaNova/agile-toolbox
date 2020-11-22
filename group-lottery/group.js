@@ -124,6 +124,12 @@ function isXmas() {
 }
 
 function getGroupNameCategory() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const categoryFromUrl = urlParams.get("group");
+  if (Object.keys(GROUP_NAMES).includes(categoryFromUrl)) {
+    return categoryFromUrl;
+  }
+
   if (isXmas()) {
     return XMAS;
   }
