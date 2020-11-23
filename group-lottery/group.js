@@ -27,6 +27,7 @@ const GROUP_NAMES = {
     "Kleopatra",
   ],
   avengers: [
+    // see https://en.wikipedia.org/wiki/Avengers_(comics)
     "Ant-Man",
     "Black Panther",
     "Black Widow",
@@ -122,6 +123,23 @@ const GROUP_NAMES = {
     "Rumpelstilzchen",
     "Schneewittchen",
     "Tapferes Schneiderlein",
+  ],
+  manitu: [
+    // see https://de.wikipedia.org/wiki/Der_Schuh_des_Manitu
+    "Abahachi",
+    "Winnetouch",
+    "Grauer Star",
+    "Ranger",
+    "Santa Maria",
+    "Uschi",
+    "Dimitri",
+    "Listiger Lurch",
+    "Falscher Hase",
+    "Hombre",
+    "John",
+    "Karl May",
+    "Apollo 13",
+    "Jaqueline",
   ],
   xmas: [
     "Glühwein",
