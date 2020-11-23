@@ -3,6 +3,29 @@ const MIN_GROUP_COUNT = 1;
 const MAX_GROUP_COUNT = 12;
 const XMAS = "xmas";
 const GROUP_NAMES = {
+  asterix: [
+    // see https://de.wikipedia.org/wiki/Figuren_aus_Asterix
+    "Adrenaline",
+    "Augenblix",
+    "Automatix",
+    "Asterix",
+    "Falbala",
+    "Gutemine",
+    "Idefix",
+    "Jellosubmarine",
+    "Kantine",
+    "Majestix",
+    "Methusalix",
+    "Miraculix",
+    "Obelix",
+    "Praline",
+    "Rohrpostix",
+    "Tragicomix",
+    "Troubadix",
+    "Verleihnix",
+    "Julius Cäsar",
+    "Kleopatra",
+  ],
   city: [
     // 3 largest urban areas from each continent
     // see https://en.wikipedia.org/wiki/List_of_largest_cities
