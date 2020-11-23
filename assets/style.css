@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap");
+/* other nice fonts: Annie Use Your Telescope, Pangolin */
+@font-face {
+  font-family: NeulandFont;
+  src: url(NeulandFont_2017.ttf);
+}
 
 :root {
   --border-color: #333;
@@ -12,9 +16,8 @@
 body {
   background-color: ivory;
   color: var(--text-color);
-  font-family: "Annie Use Your Telescope", cursive;
-  font-size: 120%;
-  font-weight: bold;
+  font-family: "NeulandFont", cursive;
+  font-size: 100%;
 }
 
 #overview {
@@ -23,6 +26,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 2rem;
+  min-height: 1vh;
 }
 
 .container {
@@ -44,5 +48,5 @@ body {
 
 .tool-selection:hover span,
 .tool-selection:focus span {
-  box-shadow: inset 0 -.5rem 0 var(--shadow-color);
+  box-shadow: inset 0 -0.5rem 0 var(--shadow-color);
 }
