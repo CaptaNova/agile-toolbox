@@ -26,6 +26,26 @@ const GROUP_NAMES = {
     "Julius Cäsar",
     "Kleopatra",
   ],
+  avengers: [
+    "Ant-Man",
+    "Black Panther",
+    "Black Widow",
+    "Captain America",
+    "Doctor Strange",
+    "Falcon",
+    "Gamora",
+    "Groot",
+    "Hawkeye",
+    "Hulk",
+    "Iron Man",
+    "Luke Cage",
+    "Quicksilver",
+    "Scarlet Witch",
+    "Spider-Man",
+    "Star-Lord",
+    "Thor",
+    "Wasp",
+  ],
   city: [
     // 3 largest urban areas from each continent
     // see https://en.wikipedia.org/wiki/List_of_largest_cities
@@ -106,6 +126,7 @@ const GROUP_NAMES = {
   xmas: [
     "Glühwein",
     "Grinch",
+    "Ho Ho Ho",
     "Knecht Ruprecht",
     "Lebkuchen",
     "Nikolaus",
@@ -114,7 +135,6 @@ const GROUP_NAMES = {
     "Spekulatius",
     "Weihnachtsmann",
     "Wichtel",
-    "Ho Ho Ho",
   ],
   zodiac: [
     "Widder",
