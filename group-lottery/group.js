@@ -110,6 +110,35 @@ const GROUP_NAMES = {
     "Saarbrücken",
     "Potsdam",
   ],
+  dance: [
+    // championship dances and other commonly known dances
+    // see https://de.wikipedia.org/wiki/Tanzsport
+    // see https://de.wikipedia.org/wiki/Liste_von_T%C3%A4nzen
+    "Bolero",
+    "Boogie-Woogie",
+    "Cha-Cha-Cha",
+    "Chacarera",
+    "Charleston",
+    "Discofox",
+    "Foxtrott",
+    "Jive",
+    "Lambada",
+    "Lipsi", // DDR
+    "Mambo",
+    "Merengue",
+    "Paso Doble",
+    "Polka",
+    "Quickstepp",
+    "Rock and Roll",
+    "Rumba",
+    "Salsa",
+    "Samba",
+    "Swing",
+    "Tango",
+    "Twist",
+    "Walzer",
+    "Zumba",
+  ],
   fairytale: [
     "Aschenputtel",
     "Dornröschen",
