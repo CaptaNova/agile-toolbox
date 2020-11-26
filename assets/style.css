@@ -9,6 +9,7 @@
   --border-radius: 5px;
   --border-width: 2px;
   --text-color: #333;
+  --footer-text-color: #999;
   --shadow-color: rgba(0, 128, 128, 0.4);
   --nice-orange: rgba(255, 166, 60, 0.75);
 }
@@ -20,13 +21,75 @@ body {
   font-size: 100%;
 }
 
+footer {
+  color: var(--footer-text-color);
+  font-size: 80%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+  color: var(--footer-text-color);
+  text-decoration: underline;
+}
+
+footer a:hover,
+footer a:active {
+  color: teal;
+}
+
 #overview {
   align-items: stretch;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 2rem;
-  min-height: 1vh;
+  min-height: 90vh;
+}
+
+#legal {
+  margin: 2rem;
+  min-height: 90vh;
+}
+
+#legal h1 {
+  font-size: 160%;
+  line-height: 200%;
+}
+
+#legal h1 span,
+#legal h2 span,
+#legal h3 span {
+  box-shadow: inset 0 -0.5rem 0 var(--shadow-color);
+}
+
+#legal h2 {
+  font-size: 120%;
+  line-height: 200%;
+}
+
+#legal h3 {
+  font-size: 120%;
+  line-height: 200%;
+}
+
+#legal p,
+#legal ul {
+  margin-bottom: 1rem;
+}
+
+#legal ul li {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+#legal small {
+  font-size: small;
+  font-style: italic;
 }
 
 .container {
