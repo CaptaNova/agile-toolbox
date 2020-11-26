@@ -1,6 +1,5 @@
 name: CD
 
-# Controls when the action will run. 
 on:
   push:
     branches: [ main ]
@@ -10,10 +9,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Get latest code
+      - name: 📂 Get latest code
         uses: actions/checkout@v2
         
-      - name: 📂 Sync files
+      - name: 🚚 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.ftp_server }}
