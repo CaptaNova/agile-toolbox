@@ -93,23 +93,53 @@ footer a:active {
 }
 
 .container {
-  border: var(--border-width) solid var(--border-color);
-  border-radius: var(--border-radius);
-  box-shadow: 10px 10px 5px var(--shadow-color);
+  align-items: center;
+  border: solid var(--border-color);
+  box-shadow: 8px 8px 1px var(--shadow-color);
+  box-sizing: border-box;
+  display: flex;
+  height: 12rem;
+  justify-content: center;
+  padding: 1rem;
+  transition: 0.4s ease-in-out;
+  width: 12rem;
+}
+
+.container:hover {
+  transform: scale(120%);
+  z-index: 5;
+}
+
+.container1 {
+  border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+  border-width: 3px 4px 3px 5px;
+  transform: rotate(2deg);
+}
+
+.container2 {
+  border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+  border-width: 3px 3px 5px 5px;
+  transform: rotate(-2deg);
+}
+
+.container3 {
+  border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+  border-width: 5px 3px 3px 5px;
+  transform: rotate(2deg);
 }
 
 .tool-selection {
-  align-items: center;
   color: var(--text-color);
-  display: flex;
   height: 8rem;
-  justify-content: center;
-  margin: 1rem;
   text-decoration: none;
   width: 12rem;
 }
 
+.tool-selection span {
+  transition: 0.4s ease-in-out;
+}
+
 .tool-selection:hover span,
-.tool-selection:focus span {
-  box-shadow: inset 0 -0.5rem 0 var(--shadow-color);
+.tool-selection.box:focus span {
+  box-shadow: inset 0 -0.5rem 1px var(--shadow-color);
 }
