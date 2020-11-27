@@ -2036,7 +2036,9 @@ function getGroupNames() {
       const adjective = value.adjective[adjectiveIndex];
       const animalIndex = Math.floor(Math.random() * value.animal.length);
       const animal = value.animal[animalIndex];
-      return `${adjective} ${animal}`.replace(/^\w/, (char) => char.toUpperCase());;
+      return `${adjective} ${animal}`.replace(/^\w/, (char) =>
+        char.toUpperCase()
+      );
     });
     shuffle(groupNamesToUse);
     return groupNamesToUse;
@@ -2101,7 +2103,8 @@ function createGroups() {
     .map((group, index) => {
       const headline = `<h2>${groupNames[index]}</h2>`;
       const members = group.join("<br>");
-      return `<h2>${headline}</h2><p>${members}</p>`;
+      const containerIndex = (index % 3) + 1;
+      return `<div class="container container${containerIndex}"><h2>${headline}</h2><p>${members}</p></div>`;
     })
     .join("");
 

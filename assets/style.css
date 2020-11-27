@@ -119,7 +119,7 @@ footer a:active {
 .container2 {
   border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
   border-width: 3px 3px 5px 5px;
-  transform: rotate(-2deg);
+  transform: rotate(-1deg);
 }
 
 .container3 {
