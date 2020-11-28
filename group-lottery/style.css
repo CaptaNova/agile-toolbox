@@ -1,14 +1,3 @@
-button,
-input,
-textarea {
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  outline: none;
-}
-
 button {
   align-items: center;
   background-color: transparent;
@@ -29,15 +18,6 @@ button:hover span {
   box-shadow: inset 0 -0.5rem 0 var(--shadow-color);
 }
 
-h1 {
-  color: teal;
-  font-size: 180%;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 h2 {
   color: teal;
   font-size: 140%;
@@ -45,16 +25,17 @@ h2 {
 }
 
 #names {
+  background-color: transparent;
   border: var(--border-width) solid var(--border-color);
   border-radius: var(--border-radius);
   box-sizing: border-box;
   color: var(--text-color);
-  display: block;
-  font-size: 100%;
   margin-bottom: 1rem;
+  max-width: 20rem;
   padding: 0.5rem;
   resize: none;
   width: 100%;
+  /* TODO: hand-drawn border */
 }
 
 #names:focus {
@@ -62,9 +43,9 @@ h2 {
 }
 
 #number-of-groups {
+  background-color: transparent;
   border: none;
   border-bottom: var(--border-width) solid var(--border-color);
-  font-size: 100%;
   margin-bottom: 1rem;
   padding: 0.5rem;
   width: 3rem;
@@ -75,48 +56,8 @@ h2 {
 }
 
 #result {
-  margin-top: 4rem;
-  padding-bottom: 2rem;
+  margin: 4rem 0 2rem 0;
   visibility: hidden;
-}
-
-.lifted {
-  border-radius: 4px;
-}
-
-.lifted::after,
-.lifted::before {
-  bottom: 15px;
-  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-  height: 20%;
-  left: 10px;
-  max-height: 100px;
-  max-width: 300px;
-  transform: rotate(-3deg);
-  width: 50%;
-}
-
-.lifted::after {
-  left: auto;
-  right: 10px;
-  transform: rotate(3deg);
-}
-
-.drop-shadow {
-  background: #fff;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  margin: 2em auto;
-  max-width: 30rem;
-  padding: 1em;
-  position: relative;
-  width: 90%;
-}
-
-.drop-shadow::after,
-.drop-shadow::before {
-  content: "";
-  position: absolute;
-  z-index: -2;
 }
 
 #result {
@@ -132,10 +73,17 @@ h2 {
   height: auto;
   justify-content: flex-start;
   margin: 1rem;
-  width: 14rem;
+  max-width: 18rem;
+  width: 80%;
 }
 
-@keyframes spaceboots {
+@media only screen and (min-width: 768px) {
+  #result .container {
+    width: 16rem;
+  }
+}
+
+@keyframes shaking {
   0% {
     transform: translate(2px, 1px) rotate(0deg);
   }
@@ -172,7 +120,7 @@ h2 {
 }
 
 .shake {
-  animation-name: spaceboots;
+  animation-name: shaking;
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;

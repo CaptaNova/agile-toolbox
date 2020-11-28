@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
   <body>
-    <div id="lottery" class="drop-shadow lifted">
-      <h1>Gruppenlotterie</h1>
+    <article>
+      <div class="topic">Gruppenlotterie</div>
       <textarea
         id="names"
         placeholder="Namen der Teilnehmer"
@@ -23,13 +23,11 @@
         <input id="number-of-groups" type="number" min="1" max="12" value="3" />
         Gruppen
       </div>
-      <div>
-        <button type="button" id="match-button" onclick="match()">
-          <span>Zulosen</span>
-        </button>
-      </div>
-    </div>
-    <div id="result"></div>
+      <button type="button" id="match-button" onclick="match()">
+        <span>Zulosen</span>
+      </button>
+      <div id="result"></div>
+    </article>
     <footer>
       &copy; 2020 CaptaNova &bull;
       <a href="../imprint.html">Impressum</a> &bull;

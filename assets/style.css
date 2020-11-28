@@ -11,14 +11,35 @@
   --text-color: #333;
   --footer-text-color: #999;
   --shadow-color: rgba(0, 128, 128, 0.4);
+  --text-shadow-color: rgba(0, 128, 128, 0.6);
   --nice-orange: rgba(255, 166, 60, 0.75);
 }
 
 body {
-  background-color: ivory;
+  background-color: ghostwhite;
   color: var(--text-color);
   font-family: "NeulandFont", cursive;
   font-size: 100%;
+}
+
+button,
+input,
+textarea {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+  max-width: 45rem;
 }
 
 footer {
@@ -52,8 +73,8 @@ footer a:active {
 }
 
 #legal {
-  margin: 2rem;
-  min-height: 90vh;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 #legal h1 {
@@ -92,6 +113,7 @@ footer a:active {
   font-style: italic;
 }
 
+/* Elements */
 .container {
   align-items: center;
   border: solid var(--border-color);
@@ -101,13 +123,7 @@ footer a:active {
   height: 12rem;
   justify-content: center;
   padding: 1rem;
-  transition: 0.4s ease-in-out;
   width: 12rem;
-}
-
-.container:hover {
-  transform: scale(120%);
-  z-index: 5;
 }
 
 .container1 {
@@ -128,6 +144,23 @@ footer a:active {
   transform: rotate(2deg);
 }
 
+.topic {
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  font-size: 180%;
+  line-height: 200%;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px var(--text-shadow-color);
+  width: 100%;
+  max-width: 50rem;
+  /* TODO: hand-drawn border */
+}
+
+/* Page styles */
+
 .tool-selection {
   color: var(--text-color);
   height: 8rem;
@@ -142,4 +175,32 @@ footer a:active {
 .tool-selection:hover span,
 .tool-selection.box:focus span {
   box-shadow: inset 0 -0.5rem 1px var(--shadow-color);
+}
+
+@media only screen and (min-width: 768px) {
+  article {
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    padding: 2rem;
+    max-width: 90%;
+    margin: 2rem auto;
+  }
+
+  /* Elements */
+
+  .container {
+    transition: 0.4s ease-in-out;
+  }
+
+  .container:hover {
+    transform: scale(120%);
+    z-index: 5;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  article {
+    max-width: 60rem;
+  }
 }
