@@ -2004,7 +2004,7 @@ function shuffle(arr) {
 
 function isXmas() {
   const date = new Date();
-  return date.getMonth() === 11 && date.getDate <= 25;
+  return date.getMonth() === 11 && date.getDate() <= 25;
 }
 
 // TODO getRandomArrayItem
