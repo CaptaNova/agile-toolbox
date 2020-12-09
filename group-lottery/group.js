@@ -1941,6 +1941,38 @@ const GROUP_NAMES = {
     "Apollo 13",
     "Jaqueline",
   ],
+  seven_summits: [
+    // order: Africa, Antarctica, Asia, Australia, Europe, Europe/Caucasus, North America, South America
+    // see https://en.wikipedia.org/wiki/Seven_Summits
+    // see https://en.wikipedia.org/wiki/Seven_Second_Summits
+    // see https://en.wikipedia.org/wiki/Seven_Third_Summits
+    "Kilimandscharo", // Kibo
+    "Mount Vinson",
+    "Mount Everest",
+    "Puncak Jaya",
+    "Mont Blanc",
+    "Elbrus",
+    "Denali",
+    "Aconcagua",
+    // seven second summits
+    "Mount Kenia", // Batian
+    "Mount Tyree",
+    "K2",
+    "Sumantri",
+    "Monte Rosa", // Dufourspitze
+    "Dychtau",
+    "Mount Logan",
+    "Ojos del Salado",
+    // seven third summits
+    "Mawenzi",
+    "Mount Shinn",
+    "Kangchenjunga",
+    "Puncak Trikora",
+    "Dom",
+    "Shkhara",
+    "Pico de Orizaba",
+    "Monte Pissis",
+  ],
   simpsons: [
     // see https://en.wikipedia.org/wiki/List_of_The_Simpsons_characters
     "Homer",
