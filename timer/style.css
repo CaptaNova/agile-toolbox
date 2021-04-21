@@ -1,0 +1,146 @@
+footer {
+  padding-top: 2rem;
+}
+
+#app {
+  height: 100%;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.wrapper {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* timer */
+.agile-timer {
+  position: relative;
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+}
+
+/* visualization */
+.agile-timer-svg {
+  /* Flips the svg and makes the animation to move left-to-right */
+  transform: scaleX(-1);
+}
+
+.agile-timer-circle {
+  fill: none;
+  stroke: none;
+}
+
+.agile-timer-scale {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.agile-timer-indicator-path {
+  /* Just as thick as the original ring */
+  stroke-width: 7px;
+
+  /* Rounds the line endings to create a seamless circle */
+  stroke-linecap: round;
+
+  /* Makes sure the animation starts at the top of the circle */
+  transform: rotate(90deg);
+  transform-origin: center;
+
+  /* One second aligns with the speed of the countdown timer */
+  transition: 1s linear all;
+
+  /* Allows the ring to change color when the color value updates */
+  stroke: currentColor;
+}
+
+.agile-timer-indicator-path.green {
+  color: ForestGreen;
+}
+
+.agile-timer-indicator-path.orange {
+  color: var(--nice-orange);
+}
+
+.agile-timer-indicator-path.red {
+  color: FireBrick;
+}
+
+/* controls */
+.agile-timer-display {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  /* Create a flexible box that centers content vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.agile-timer-time {
+  align-items: center;
+  display: flex;
+  font-size: 72px;
+  height: 40%;
+  justify-content: center;
+}
+
+.agile-timer-time input,
+.agile-timer-time output {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 72px;
+  width: 1.5em;
+}
+
+.agile-timer-time input:focus {
+  border-bottom: var(--border-width) solid ForestGreen;
+  color: ForestGreen;
+}
+
+.agile-timer-time input::-webkit-inner-spin-button,
+.agile-timer-time input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.agile-timer-time input {
+  -moz-appearance: textfield;
+}
+
+#minutes-input,
+#minutes-output {
+  padding-right: 1rem;
+  text-align: right;
+}
+
+#seconds-input,
+#seconds-output {
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.agile-timer-controls {
+  height: 30%;
+}
+
+.agile-timer-controls span {
+  padding: 0.5rem;
+}
+
+.agile-timer-controls span:hover {
+  color: ForestGreen;
+  cursor: pointer;
+}
+
+.agile-timer-controls span.disabled {
+  color: #999;
+  cursor: default;
+}
